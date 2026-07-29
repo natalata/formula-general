@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecuacion Cuadratica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="pop-art-grid">
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+      <div class="pop-art-panel"></div>
+    </div>
+
+    <div class="page-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1 class="logo">ECUACION<br><span class="highlight">CUADRATICA</span></h1>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#informacion" class="nav-link">
+              <span class="nav-text">Informacion</span>
+            </a></li>
+            <li><a href="#ejemplo" class="nav-link">
+              <span class="nav-text">Ejemplo</span>
+            </a></li>
+            <li><a href="#calculadora" class="nav-link">
+              <span class="nav-text">Calculadora</span>
+            </a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <p class="footer-text">Natalia Estrada</p>
+          <p class="footer-subtext">4to BCC | 2026</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="hero-badge">Formula General</div>
+            <h2 class="hero-title">Resuelve cualquier ecuacion cuadratica</h2>
+            <p class="hero-description">
+              Ingresa los coeficientes <strong>a</strong>, <strong>b</strong> y <strong>c</strong> 
+              y obten las soluciones al instante
+            </p>
+          </div>
+          <div class="hero-formula">
+            <div class="formula-display">
+              $$ax^2 + bx + c = 0$$
+            </div>
+          </div>
+        </section>
+
+        <section id="informacion" class="content-section">
+          <div class="section-header">
+            <span class="section-tag">Teoria</span>
+            <h2 class="section-title">Que es una ecuacion cuadratica?</h2>
+          </div>
+          
+          <div class="info-grid">
+            <div class="info-card">
+              <h3>Definicion</h3>
+              <p>Es una <strong>ecuacion polinomica de segundo grado</strong>. Su forma general representa una parabola en el plano cartesiano.</p>
+            </div>
+            
+            <div class="info-card highlight">
+              <h3>Forma General</h3>
+              <div class="formula-card">
+                $$ax^2 + bx + c = 0$$
+              </div>
+              <p>Donde <strong>a</strong>, <strong>b</strong> y <strong>c</strong> son coeficientes reales, y <strong>a != 0</strong>.</p>
+            </div>
+          </div>
+
+          <div class="section-subtitle">Coeficientes</div>
+          <div class="coeficientes-grid">
+            <div class="coeficiente-card">
+              <span class="coef-symbol">a</span>
+              <p>Coeficiente cuadratico. Determina la <strong>concavidad</strong> de la parabola.</p>
+            </div>
+            <div class="coeficiente-card">
+              <span class="coef-symbol">b</span>
+              <p>Coeficiente lineal. Afecta la <strong>posicion</strong> del vertice.</p>
+            </div>
+            <div class="coeficiente-card">
+              <span class="coef-symbol">c</span>
+              <p>Termino independiente. Representa el <strong>punto de corte</strong> con el eje Y.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <span class="section-tag">Formula</span>
+            <h2 class="section-title">Formula General</h2>
+          </div>
+          
+          <div class="formula-showcase">
+            <div class="big-formula">
+              $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+            </div>
+            <p class="formula-description">
+              Esta formula permite encontrar las raices (soluciones) de cualquier ecuacion cuadratica.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-header">
+            <span class="section-tag">Analisis</span>
+            <h2 class="section-title">El Discriminante</h2>
+          </div>
+          
+          <div class="discriminante-explain">
+            <p>El <strong>discriminante (D)</strong> es la parte de la formula general que esta bajo la raiz cuadrada:</p>
+            <div class="discriminante-formula">
+              $$D = b^2 - 4ac$$
+            </div>
+            <p>El valor del discriminante determina la <strong>naturaleza de las soluciones</strong>:</p>
+          </div>
+
+          <div class="discriminante-table-container">
+            <table class="discriminante-table">
+              <thead>
+                <tr>
+                  <th>Valor de D</th>
+                  <th>Resultado</th>
+                  <th>Interpretacion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row positive">
+                  <td><strong>D > 0</strong></td>
+                  <td>Dos soluciones reales diferentes</td>
+                  <td>La parabola corta el eje X en dos puntos</td>
+                </tr>
+                <tr class="table-row zero">
+                  <td><strong>D = 0</strong></td>
+                  <td>Una solucion real</td>
+                  <td>La parabola toca el eje X en un punto (vertice)</td>
+                </tr>
+                <tr class="table-row negative">
+                  <td><strong>D < 0</strong></td>
+                  <td>Dos soluciones complejas</td>
+                  <td>La parabola no corta el eje X</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="ejemplo" class="content-section">
+          <div class="section-header">
+            <span class="section-tag">Practica</span>
+            <h2 class="section-title">Ejemplo Resuelto</h2>
+          </div>
+          
+          <div class="example-card">
+            <div class="example-header">
+              <span class="example-badge">Paso a paso</span>
+              <div class="example-equation">
+                $$x^2 - 5x + 6 = 0$$
+              </div>
+            </div>
+            
+            <div class="example-steps">
+              <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                  <h4>Identificar coeficientes</h4>
+                  <p><code>a = 1</code> | <code>b = -5</code> | <code>c = 6</code></p>
+                </div>
+              </div>
+              
+              <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                  <h4>Calcular discriminante</h4>
+                  <p>D = (-5)2 - 4(1)(6) = 25 - 24 = <strong>1</strong></p>
+                  <p class="step-note">D > 0 - Dos soluciones reales</p>
+                </div>
+              </div>
+              
+              <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                  <h4>Aplicar formula general</h4>
+                  <p>x = [5 +- sqrt(1)] / 2</p>
+                </div>
+              </div>
+              
+              <div class="step highlight">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                  <h4>Soluciones</h4>
+                  <div class="solutions">
+                    <span class="solution">x1 = 3</span>
+                    <span class="solution">x2 = 2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="calculadora" class="content-section calculator-section">
+          <div class="section-header">
+            <span class="section-tag">Herramienta</span>
+            <h2 class="section-title">Calculadora Interactiva</h2>
+          </div>
+          
+          <div class="calculator-card">
+            <p class="calculator-subtitle">
+              Ingresa los coeficientes para resolver <code>ax2 + bx + c = 0</code>
+            </p>
+
+            <form id="formulario" class="calculator-form">
+              <div class="inputs-grid">
+                <div class="input-group">
+                  <label for="a">
+                    <span class="input-label">Coeficiente <strong>a</strong></span>
+                    <span class="input-hint">(No puede ser 0)</span>
+                  </label>
+                  <input type="text" id="a" placeholder="Ej: 1" required />
+                </div>
+                <div class="input-group">
+                  <label for="b">
+                    <span class="input-label">Coeficiente <strong>b</strong></span>
+                  </label>
+                  <input type="text" id="b" placeholder="Ej: -5" required />
+                </div>
+                <div class="input-group">
+                  <label for="c">
+                    <span class="input-label">Coeficiente <strong>c</strong></span>
+                  </label>
+                  <input type="text" id="c" placeholder="Ej: 6" required />
+                </div>
+              </div>
+              <button type="submit" class="btn-calculate">
+                <span class="btn-text">Resolver Ecuacion</span>
+                <span class="btn-icon">*</span>
+              </button>
+            </form>
+
+            <div id="resultado" class="result-card"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
